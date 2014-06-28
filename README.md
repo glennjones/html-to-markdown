@@ -5,14 +5,14 @@ This is a work in progress
 
 Support the conversion of:
 
-1. Headings <h1> etc
-2. Block level <p> and <div>
-3. Lists <ul> and <ol>
-4. Links <a>
-5. Images <img>
-6. Inline tags <strong> <b> <em> and <i>
-7. Line <hr/>
-8. Break line <br/>
+1. Headings `<h1>` `<h2>` etc
+2. Block level `<p>` and `<div>`
+3. Lists `<ul>` and `<ol>`
+4. Links `<a>`
+5. Images `<img>`
+6. Inline tags `<strong>` `<b>` `<em>` and `<i>`
+7. Line `<hr/>`
+8. Break line `<br/>`
 
 Does not yet support:
 
