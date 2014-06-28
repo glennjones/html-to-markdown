@@ -22,3 +22,7 @@
 	font-size: 1em;
 }
 
+#readme pre code{
+	background-color: #f8f8f8;
+}
+

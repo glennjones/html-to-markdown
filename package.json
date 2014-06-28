@@ -1,7 +1,7 @@
 {
   "name": "html-to-markdown",
   "author": "Glenn Jones",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An API for parsing markdown from HTML",
   "keywords": [
     "markdown",
