@@ -103,6 +103,19 @@ describe('inline', function(){
 	});
 
 
+	it('should add link structure making links absolute', function(done){
+		var options = {
+			html: '<a href="../test/page" title="title">test link</a>',
+			baseUrl: 'http://example.com/lib/'
+		};
+		tomarkdown.parseHtml(options, function(error, result){
+			assert.equal(result, '[test link](http://example.com/test/page "title")', 'should return absolute link');
+			assert.equal(error, null, 'should return absolute link without error');
+			done();
+		});
+	});
+
+
 	it('should add image structure', function(done){
 		var options = {
 			html: '<img src="http://example.com/photo.png" />'
@@ -132,6 +145,19 @@ describe('inline', function(){
 		tomarkdown.parseHtml(options, function(error, result){
 			assert.equal(result, '![my photo](http://example.com/photo.png "picture of me")', 'should return image structure ');
 			assert.equal(error, null, 'should return image structure  without error');
+			done();
+		});
+	});
+
+
+	it('should add image structure', function(done){
+		var options = {
+			html: '<img src="/images/photo.png" />',
+			baseUrl: 'http://example.com/'
+		};
+		tomarkdown.parseHtml(options, function(error, result){
+			assert.equal(result, '![](http://example.com/images/photo.png)', 'should return absolute link in src');
+			assert.equal(error, null, 'should return absolute link in src without error');
 			done();
 		});
 	});
