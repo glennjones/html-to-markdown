@@ -1,6 +1,6 @@
 module.exports = {
     "site": {
-        "name": "dom-to-microformats",
+        "name": "html-to-markdown",
     },
     "environments": {
         "development": {
