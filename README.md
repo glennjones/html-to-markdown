@@ -1,7 +1,8 @@
 
 ## HTML to Markdown 
 
-This is a work in progress 
+This is a 9-year-old historical project - It is left up as an archive.
+
 
 Support the conversion of:
 
